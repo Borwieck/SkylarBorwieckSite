@@ -22,7 +22,13 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Games" asp-action="Index">Games</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="History">History</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Info" asp-action="Index">Info</a>
                         </li>
                     </ul>
                 </div>
@@ -37,7 +43,10 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2021 - SkylarBorwieckSite - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2021 - SkylarBorwieckSite - 
+            <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            <a asp-area="" asp-controller="Info" asp-action="Links">Links</a>
+            <a asp-area="" asp-controller="Info" asp-action="People">People</a>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

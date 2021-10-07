@@ -22,7 +22,6 @@ C:\Users\Royal\Desktop\School\Fall 2021\Web Dev\Labs\SkylarBorwieckSite\SkylarBo
 C:\Users\Royal\Desktop\School\Fall 2021\Web Dev\Labs\SkylarBorwieckSite\SkylarBorwieckSite\obj\Debug\netcoreapp3.1\SkylarBorwieckSite.TagHelpers.output.cache
 C:\Users\Royal\Desktop\School\Fall 2021\Web Dev\Labs\SkylarBorwieckSite\SkylarBorwieckSite\obj\Debug\netcoreapp3.1\SkylarBorwieckSite.RazorCoreGenerate.cache
 C:\Users\Royal\Desktop\School\Fall 2021\Web Dev\Labs\SkylarBorwieckSite\SkylarBorwieckSite\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
-C:\Users\Royal\Desktop\School\Fall 2021\Web Dev\Labs\SkylarBorwieckSite\SkylarBorwieckSite\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\Royal\Desktop\School\Fall 2021\Web Dev\Labs\SkylarBorwieckSite\SkylarBorwieckSite\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\Royal\Desktop\School\Fall 2021\Web Dev\Labs\SkylarBorwieckSite\SkylarBorwieckSite\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\Royal\Desktop\School\Fall 2021\Web Dev\Labs\SkylarBorwieckSite\SkylarBorwieckSite\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
@@ -35,3 +34,8 @@ C:\Users\Royal\Desktop\School\Fall 2021\Web Dev\Labs\SkylarBorwieckSite\SkylarBo
 C:\Users\Royal\Desktop\School\Fall 2021\Web Dev\Labs\SkylarBorwieckSite\SkylarBorwieckSite\obj\Debug\netcoreapp3.1\SkylarBorwieckSite.pdb
 C:\Users\Royal\Desktop\School\Fall 2021\Web Dev\Labs\SkylarBorwieckSite\SkylarBorwieckSite\obj\Debug\netcoreapp3.1\SkylarBorwieckSite.genruntimeconfig.cache
 C:\Users\Royal\Desktop\School\Fall 2021\Web Dev\Labs\SkylarBorwieckSite\SkylarBorwieckSite\obj\Debug\netcoreapp3.1\SkylarBorwieckSite.csproj.CopyComplete
+C:\Users\Royal\Desktop\School\Fall 2021\Web Dev\Labs\SkylarBorwieckSite\SkylarBorwieckSite\obj\Debug\netcoreapp3.1\Razor\Views\Info\Links.cshtml.g.cs
+C:\Users\Royal\Desktop\School\Fall 2021\Web Dev\Labs\SkylarBorwieckSite\SkylarBorwieckSite\obj\Debug\netcoreapp3.1\Razor\Views\Info\Index.cshtml.g.cs
+C:\Users\Royal\Desktop\School\Fall 2021\Web Dev\Labs\SkylarBorwieckSite\SkylarBorwieckSite\obj\Debug\netcoreapp3.1\Razor\Views\Info\People.cshtml.g.cs
+C:\Users\Royal\Desktop\School\Fall 2021\Web Dev\Labs\SkylarBorwieckSite\SkylarBorwieckSite\obj\Debug\netcoreapp3.1\Razor\Views\Home\History.cshtml.g.cs
+C:\Users\Royal\Desktop\School\Fall 2021\Web Dev\Labs\SkylarBorwieckSite\SkylarBorwieckSite\obj\Debug\netcoreapp3.1\Razor\Views\Games\Index.cshtml.g.cs

@@ -9,21 +9,15 @@ using System.Threading.Tasks;
 
 namespace SkylarBorwieckSite.Controllers
 {
-    public class HomeController : Controller
+    public class GamesController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly ILogger<GamesController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        public GamesController(ILogger<GamesController> logger)
         {
             _logger = logger;
         }
-
         public IActionResult Index()
-        {
-            return View();
-        }
-
-        public IActionResult History()
         {
             return View();
         }
