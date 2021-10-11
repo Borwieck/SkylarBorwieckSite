@@ -1,9 +1,41 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+@model MessageModel
 
 <div class="text-center">
     <h1 class="display-4">Welcome to the Video Game Club Website!</h1>
     <p>This site is dedicated to videogames and the people who play them</p>
     <p>This is the home page!</p>
+
+
+    <form asp-action="Index" method="post">
+        <div>
+            <label asp-for="Sender">Sender:</label>
+            <input asp-for="Sender" />
+        </div>
+        <div>
+            <label asp-for="Receipient">Receipient:</label>
+            <input asp-for="Receipient" />
+        </div>
+        <div>
+            <label asp-for="Subject">Subject:</label>
+            <input asp-for="Subject" />
+        </div>
+        <div>
+            <label asp-for="Message">Message: </label>
+            <input asp-for="Message" />
+        </div>
+        <button type="submit">Save</button>
+        <a asp-action="Index">Clear</a>
+    </form>
+
+    <hr />
+
+    <div>
+        <p>Sender: @ViewBag.Sender </p>
+        <p>Receipient: @ViewBag.Receipient</p>
+        <p>Subject: @ViewBag.Subject </p>
+        <p>Message: @ViewBag.Message </p>
+    </div>
 </div>

@@ -18,9 +18,26 @@ namespace SkylarBorwieckSite.Controllers
             _logger = logger;
         }
 
+        [HttpGet]
         public IActionResult Index()
         {
+            ViewBag.Sender = "";
+            ViewBag.Receipient = "";
+            ViewBag.Subject = "";
+            ViewBag.Message = "";
             return View();
+        }
+
+        [HttpPost]
+        public IActionResult Index(MessageModel model)
+        {
+            ViewBag.Sender = model.Sender;
+            ViewBag.Receipient = model.Receipient;
+            ViewBag.Subject = model.Subject;
+            ViewBag.Message = model.Message;
+
+
+            return View(model);
         }
 
         public IActionResult History()
