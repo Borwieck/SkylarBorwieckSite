@@ -16,8 +16,10 @@ namespace SkylarBorwieckSite.Controllers
 		[HttpGet]
 		public IActionResult Index()
 		{
-			ViewBag.Sender = "test1";
-			ViewBag.Receipient = "test2";
+			ViewBag.Sender = "";
+			ViewBag.Receipient = "";
+			ViewBag.Subject = "";
+			ViewBag.Message = "";
 			return View();
 		}
 
@@ -26,6 +28,8 @@ namespace SkylarBorwieckSite.Controllers
 		{
 			ViewBag.Sender = model.Sender;
 			ViewBag.Receipient = model.Receipient;
+			ViewBag.Subject = model.Subject;
+			ViewBag.Message = model.Message;
 
 
 			return View(model);
