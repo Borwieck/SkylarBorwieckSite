@@ -21,22 +21,31 @@ namespace SkylarBorwieckSite.Controllers
         [HttpGet]
         public IActionResult Index()
         {
+            List<MessageModel> message = MessageDB.Get();
             ViewBag.Sender = "";
             ViewBag.Receipient = "";
             ViewBag.Subject = "";
             ViewBag.Message = "";
+           
+            
+            ViewBag.chatHistory = message;
             return View();
         }
 
         [HttpPost]
         public IActionResult Index(MessageModel model)
         {
-            ViewBag.Sender = model.Sender;
-            ViewBag.Receipient = model.Receipient;
-            ViewBag.Subject = model.Subject;
-            ViewBag.Message = model.Message;
+            
 
+            if(ModelState.IsValid)
+            {
+                MessageDB.AddMessage(model);
+                MessageDB.Save();
 
+            }
+            List<MessageModel> message = MessageDB.Get();
+
+            ViewBag.chatHistory = message;
             return View(model);
         }
 

@@ -1,7 +1,7 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-@model MessageModel
+@model MessageModel;
 
 <div class="text-center">
     <h1 class="display-4">Welcome to the Video Game Club Website!</h1>
@@ -24,7 +24,7 @@
         </div>
         <div>
             <label asp-for="Message">Message: </label>
-            <input asp-for="Message" />
+            <textarea asp-for="Message" ></textarea>
         </div>
         <button type="submit">Save</button>
         <a asp-action="Index">Clear</a>
@@ -33,9 +33,24 @@
     <hr />
 
     <div>
-        <p>Sender: @ViewBag.Sender </p>
-        <p>Receipient: @ViewBag.Receipient</p>
-        <p>Subject: @ViewBag.Subject </p>
-        <p>Message: @ViewBag.Message </p>
+        <table>
+            <tr>
+                <th>Sender </th>
+                <th>Receipient </th>
+                <th>Subject </th>
+                <th>Message</th>
+            </tr>
+
+            @foreach (MessageModel chat in (List<MessageModel>)ViewBag.chatHistory)
+            {
+                <tr>
+                    <td>@chat.Sender</td>
+                    <td>@chat.Receipient</td>
+                    <td>@chat.Subject</td>
+                    <td>@chat.Message</td>
+                </tr>
+
+            }
+        </table>
     </div>
 </div>

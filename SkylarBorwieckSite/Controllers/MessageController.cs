@@ -20,6 +20,7 @@ namespace SkylarBorwieckSite.Controllers
 			ViewBag.Receipient = "";
 			ViewBag.Subject = "";
 			ViewBag.Message = "";
+			
 			return View();
 		}
 
