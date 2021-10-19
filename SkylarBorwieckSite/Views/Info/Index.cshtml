@@ -1,16 +1,11 @@
 ﻿@{
     ViewData["Title"] = "Info Page";
 }
-
-<div class="text-center">
-    <h1 class="display-4">Info Page Links</h1>
-
-</div>
-<ul>
-    <li class="nav-item">
-        <a class="nav-link text-dark" asp-area="" asp-controller="Info" asp-action="Links">Links</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link text-dark" asp-area="" asp-controller="Info" asp-action="People">People</a>
-    </li>
+<h1>@ViewData["Title"]</h1>
+<ul class="nav nav-pills">
+    <li class="active alert-primary"><a class="nav-link text-dark" asp-area="" asp-controller="Info" asp-action="Index">Home</a></li>
+    <li><a class="nav-link text-dark" asp-area="" asp-controller="Info" asp-action="Links">Links</a></li>
+    <li><a class="nav-link text-dark" asp-area="" asp-controller="Info" asp-action="People">People</a></li>
 </ul>
+<hr />
+<p>This is the info page</p>

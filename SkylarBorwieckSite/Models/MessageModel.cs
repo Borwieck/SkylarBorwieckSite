@@ -21,6 +21,8 @@ namespace SkylarBorwieckSite.Models
         [Required]
         public string Message { get; set; }
 
+        public string MsgTime { get; set; }
+
 
     }
 }

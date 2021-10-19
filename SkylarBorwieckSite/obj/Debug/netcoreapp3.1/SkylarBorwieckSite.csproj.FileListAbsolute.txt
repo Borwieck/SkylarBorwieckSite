@@ -24,7 +24,6 @@ C:\Users\Royal\Desktop\School\Fall 2021\Web Dev\Labs\SkylarBorwieckSite\SkylarBo
 C:\Users\Royal\Desktop\School\Fall 2021\Web Dev\Labs\SkylarBorwieckSite\SkylarBorwieckSite\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\Royal\Desktop\School\Fall 2021\Web Dev\Labs\SkylarBorwieckSite\SkylarBorwieckSite\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\Royal\Desktop\School\Fall 2021\Web Dev\Labs\SkylarBorwieckSite\SkylarBorwieckSite\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
-C:\Users\Royal\Desktop\School\Fall 2021\Web Dev\Labs\SkylarBorwieckSite\SkylarBorwieckSite\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\Royal\Desktop\School\Fall 2021\Web Dev\Labs\SkylarBorwieckSite\SkylarBorwieckSite\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
 C:\Users\Royal\Desktop\School\Fall 2021\Web Dev\Labs\SkylarBorwieckSite\SkylarBorwieckSite\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
 C:\Users\Royal\Desktop\School\Fall 2021\Web Dev\Labs\SkylarBorwieckSite\SkylarBorwieckSite\obj\Debug\netcoreapp3.1\SkylarBorwieckSite.RazorTargetAssemblyInfo.cache
@@ -40,3 +39,4 @@ C:\Users\Royal\Desktop\School\Fall 2021\Web Dev\Labs\SkylarBorwieckSite\SkylarBo
 C:\Users\Royal\Desktop\School\Fall 2021\Web Dev\Labs\SkylarBorwieckSite\SkylarBorwieckSite\obj\Debug\netcoreapp3.1\Razor\Views\Home\History.cshtml.g.cs
 C:\Users\Royal\Desktop\School\Fall 2021\Web Dev\Labs\SkylarBorwieckSite\SkylarBorwieckSite\obj\Debug\netcoreapp3.1\Razor\Views\Games\Index.cshtml.g.cs
 C:\Users\Royal\Desktop\School\Fall 2021\Web Dev\Labs\SkylarBorwieckSite\SkylarBorwieckSite\obj\Debug\netcoreapp3.1\Razor\Views\Home\Contact.cshtml.g.cs
+C:\Users\Royal\Desktop\School\Fall 2021\Web Dev\Labs\SkylarBorwieckSite\SkylarBorwieckSite\bin\Debug\netcoreapp3.1\libman.json

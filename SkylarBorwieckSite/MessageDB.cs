@@ -30,6 +30,7 @@ namespace SkylarBorwieckSite
             string receipient;
             string subject;
             string text;
+            string time;
             try
             {
                 StreamReader reader = new StreamReader(filename);
@@ -43,16 +44,17 @@ namespace SkylarBorwieckSite
 
                     sender = WebUtility.UrlDecode(parts[0]);
                     receipient = WebUtility.UrlDecode(parts[1]);
-                    subject = WebUtility.UrlDecode(parts[2]);
-                    text = WebUtility.UrlDecode(parts[3]);
-                    message.Add(new MessageModel { Sender = sender, Receipient = receipient, Subject = subject, Message = text });
+                    time = WebUtility.UrlDecode(parts[2]);
+                    subject = WebUtility.UrlDecode(parts[3]);
+                    text = WebUtility.UrlDecode(parts[4]);
+                    message.Add(new MessageModel { Sender = sender, Receipient = receipient, MsgTime = time, Subject = subject, Message = text }) ;
                 }
 
                 reader.Close();
             }
             catch(Exception)
             {
-
+                throw new InvalidDataException();
             }
             loaded = true;
         }
@@ -61,6 +63,8 @@ namespace SkylarBorwieckSite
         {
             if (loaded == false)
                 Load();
+            newMessage.MsgTime = DateTime.Now.ToString();
+
             message.Add(newMessage);
         }
         public static void Save()
@@ -74,10 +78,11 @@ namespace SkylarBorwieckSite
             {
                 string sender = WebUtility.UrlEncode(chat.Sender);
                 string receipient = WebUtility.UrlEncode(chat.Receipient);
+                string time = WebUtility.UrlEncode(chat.MsgTime);
                 string subject = WebUtility.UrlEncode(chat.Subject);
                 string text = WebUtility.UrlEncode(chat.Message);
 
-                string line = sender + "|" + receipient + "|" + subject + "|" + text;
+                string line = sender + "|" + receipient + "|"+ time + "|" + subject + "|" + text;
 
                 writer.WriteLine(line);
             }

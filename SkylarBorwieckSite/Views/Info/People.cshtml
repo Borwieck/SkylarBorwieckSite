@@ -2,4 +2,10 @@
     ViewData["Title"] = "People";
 }
 <h1>@ViewData["Title"]</h1>
+<ul class="nav nav-pills">
+    <li><a class="nav-link text-dark" asp-area="" asp-controller="Info" asp-action="Index">Home</a></li>
+    <li><a class="nav-link text-dark" asp-area="" asp-controller="Info" asp-action="Links">Links</a></li>
+    <li class="active alert-primary"><a class="nav-link text-dark" asp-area="" asp-controller="Info" asp-action="People">People</a></li>
+</ul>
+<hr />
 <p>Use this page to share important people.</p>

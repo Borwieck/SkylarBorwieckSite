@@ -24,6 +24,7 @@ namespace SkylarBorwieckSite.Controllers
             List<MessageModel> message = MessageDB.Get();
             ViewBag.Sender = "";
             ViewBag.Receipient = "";
+            ViewBag.MsgTime = "";
             ViewBag.Subject = "";
             ViewBag.Message = "";
            
