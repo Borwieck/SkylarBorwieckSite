@@ -30,6 +30,26 @@ namespace SkylarBorwieckSite.Controllers
         {
             return View();
         }
+        [HttpGet]
+        public IActionResult Quiz()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Quiz(QuizModel model)
+        {
+            if (QuizModel.CheckAnswer(model.SelectedAnswer.ToLower(),"correct"))
+            {
+                QuizModel.Check = "Correct";
+                return View();
+            }
+            else
+            {
+                QuizModel.Check = "Incorrect";
+                return View();
+            }
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
