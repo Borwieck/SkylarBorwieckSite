@@ -33,13 +33,13 @@ namespace SkylarBorwieckSite.Controllers
         [HttpGet]
         public IActionResult Quiz()
         {
-            return View();
+            return View(); 
         }
 
         [HttpPost]
         public IActionResult Quiz(QuizModel model)
         {
-            if (QuizModel.CheckAnswer(model.SelectedAnswer.ToLower(),"correct"))
+            if (QuizModel.CheckAnswer(model.SelectedAnswer,"correct"))
             {
                 QuizModel.Check = "Correct";
                 return View();
