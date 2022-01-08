@@ -24,7 +24,7 @@ namespace SkylarBorwieckSite
             return message;
         }
         public static void Load()
-        {
+        { 
             string line;
             string sender;
             string receipient;

@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Quiz Page";
+    @model SkylarBorwieckSite.Models.QuizModel
+}
+<h1>@ViewData["Title"]</h1>
+<ul class="nav nav-pills">
+    <li><a class="nav-link text-dark" asp-area="" asp-controller="Info" asp-action="Index">Home</a></li>
+    <li><a class="nav-link text-dark" asp-area="" asp-controller="Info" asp-action="Links">Links</a></li>
+    <li><a class="nav-link text-dark" asp-area="" asp-controller="Info" asp-action="People">People</a></li>
+    <li class="active alert-primary"><a class="nav-link text-dark" asp-area="" asp-controller="Info" asp-action="Quiz">Quiz</a></li>
+
+</ul>
+
+<form  asp-action="Quiz" asp-controller="Info" method="post">
+
+    Check the answer to each multiple-coice question, and click on the "Submit" button to submit the information.
+
+
+    <P>
+        <br />
+        1. What is the best selling game ever<BR>
+        <br />
+        <!--<input type="text" asp-for="SelectedAnswer" id="quizAnswer" placeholder="Enter your answer here" />-->
+        <input id="answer" type="radio" asp-for="SelectedAnswer" value="correct">Minecraft<br />
+        <input id="answer" type="radio" asp-for="SelectedAnswer" value="incorrect1">Tetris<br />
+        <input id="answer" type="radio" asp-for="SelectedAnswer" value="incorrect2">Pac-Man<br />
+        <input id="answer" type="radio" asp-for="SelectedAnswer" value="incorrect3">Super Mario Bro's
+        <br>
+
+<p>@QuizModel.Check</p>
+
+        <br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Clear">
+</form>

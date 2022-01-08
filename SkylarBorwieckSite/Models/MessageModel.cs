@@ -8,6 +8,8 @@ namespace SkylarBorwieckSite.Models
 {
     public class MessageModel
     { 
+        [Key]
+        public int MessageId { get; set; }
 
       	[Required]
         public string Sender { get; set; }

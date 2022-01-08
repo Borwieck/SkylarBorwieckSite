@@ -9,51 +9,5 @@
         <p>This site is dedicated to videogames and the people who play them</p>
         <p>This is the home page!</p>
     </header>
-    <div class="row">
-        <form class="form-check" asp-action="Index" method="post">
-            <div class="form-group">
-                <label class="" asp-for="Sender">Sender:</label>
-                <input class="form-control" asp-for="Sender" />
-            </div>
-            <div class="form-group">
-                <label asp-for="Receipient">Receipient:</label>
-                <input class="form-control" asp-for="Receipient" />
-            </div>
-            <div class="form-group">
-                <label asp-for="Subject">Subject:</label>
-                <input class="form-control" asp-for="Subject" />
-            </div>
-            <div class="form-group">
-                <label asp-for="Message">Message: </label>
-                <textarea class="form-control" asp-for="Message"></textarea>
-            </div>
-            <button type="submit" class="btn btn-success ">Save</button>
-            <button asp-action="Index" class=" btn btn-danger">Clear</button>
-        </form>
-    </div>
-    <br />
-
-    <div>
-        <table class="table">
-            <tr>
-                <th>Sender </th>
-                <th>Receipient </th>
-                <th>Date Sent</th>
-                <th>Subject </th>
-                <th>Message</th>
-            </tr>
-
-            @foreach (MessageModel chat in (List<MessageModel>)ViewBag.chatHistory)
-            {
-                <tr>
-                    <td>@chat.Sender</td>
-                    <td>@chat.Receipient</td>
-                    <td>@chat.MsgTime</td>
-                    <td>@chat.Subject</td>
-                    <td>@chat.Message</td>
-                </tr>
-
-            }
-        </table>
-    </div>
+   
 </div>

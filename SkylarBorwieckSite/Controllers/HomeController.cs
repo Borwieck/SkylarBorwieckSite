@@ -11,53 +11,90 @@ namespace SkylarBorwieckSite.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private MessageContext context { get; set; }
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(MessageContext ctx)
         {
-            _logger = logger;
+            context = ctx;
         }
 
         [HttpGet]
         public IActionResult Index()
         {
-            List<MessageModel> message = MessageDB.Get();
-            ViewBag.Sender = "";
-            ViewBag.Receipient = "";
-            ViewBag.MsgTime = "";
-            ViewBag.Subject = "";
-            ViewBag.Message = "";
+            //List<MessageModel> message = MessageDB.Get();
            
             
-            ViewBag.chatHistory = message;
+            ViewBag.chatHistory = context.Message.ToList();
             return View();
         }
 
         [HttpPost]
         public IActionResult Index(MessageModel model)
         {
-            
 
+            model.MsgTime = DateTime.Now.ToString();
             if(ModelState.IsValid)
             {
-                MessageDB.AddMessage(model);
-                MessageDB.Save();
+                //MessageDB.AddMessage(model);
+                //MessageDB.Save();
 
+                context.Message.Add(model);
+                
+                context.SaveChanges();
             }
-            List<MessageModel> message = MessageDB.Get();
 
-            ViewBag.chatHistory = message;
+            //List<MessageModel> message = MessageDB.Get();
+
+            //ViewBag.chatHistory = message;
+            ViewBag.chatHistory = context.Message.ToList();
             return View(model);
         }
 
+        [HttpPost]
+        public IActionResult Delete(MessageModel model)
+        {
+            MessageModel delMessage = context.Message.Find(model.MessageId);
+            context.Message.Remove(delMessage);
+            context.SaveChanges();
+
+            ViewBag.chatHistory = context.Message.ToList();
+            return View("Contact",new MessageModel());
+        }
         public IActionResult History()
         {
             return View();
         }
 
+        [HttpGet]
         public IActionResult Contact()
         {
+            //List<MessageModel> message = MessageDB.Get();
+
+
+            ViewBag.chatHistory = context.Message.ToList();
             return View();
+        }
+
+        [HttpPost]
+        public IActionResult Contact(MessageModel model)
+        {
+
+            model.MsgTime = DateTime.Now.ToString();
+            if (ModelState.IsValid)
+            {
+                //MessageDB.AddMessage(model);
+                //MessageDB.Save();
+
+                context.Message.Add(model);
+
+                context.SaveChanges();
+            }
+
+            //List<MessageModel> message = MessageDB.Get();
+
+            //ViewBag.chatHistory = message;
+            ViewBag.chatHistory = context.Message.ToList();
+            return View(model);
         }
 
 
